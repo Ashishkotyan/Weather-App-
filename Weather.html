@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url("2.jpg");
+    height: 100vh;
+    /* width: 100vh; */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.app-main{
+    width: 50vh;
+    margin: 100px auto;
+    background-color: rgba(240, 240, 255, 0.6) ;
+    padding: 20px;
+    text-align: center;
+} 
+.app-main > *{
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background-color: rgba(240, 240, 255, 0.6);
+    border: none;
+    outline: none;
+    color: #582233;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+
+}
+.input-box:focus{
+    background-color: rgb(231, 231, 245);
+}
+.weather-body{
+
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(240, 240, 255, 0.6);
+    height: 50vh;
+
+
+}
+.location-detail{
+    font-weight: bold;
+
+}
+
+.weather-status{
+
+    padding: 20px;
+}
+.temp{
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.min-max .weather{
+    font-size: 12pt;
+    font-weight: 600;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="app-main">
+     
+        <div class="searchinput">
+            <input type="text" placeholder="Enter city Name" class="input-box" id="input-box">
+        </div>
+
+        <div class="weather-body">
+       
+            <div class="location-detail">
+                <div class="city" id="city" >Pune, in</div>
+                <div class="date" id="date">10 june (wed), 2021</div>
+
+            </div>
+            <div class="weather-status">
+                <div class="temp" id="temp">34&deg;C</div>
+                <div class="min-max" id="min-max" >32&deg;C (min) / 34&deg;C (max)</div>
+                <div class="weather" id="weather">Clear</div>
+                <div class="img"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="Weather.js"></script>
+</body>
+</html>
